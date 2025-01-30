@@ -40,4 +40,26 @@ console.log(typeof myObj);//  data types:- object (object ka data types object h
  console.log(typeof myfunction);//  data types:- function (function ka data types function hota hai)
  
 
- 
+//  ************************************Memory**************************************
+// Stack Memeory:- primitive data type store in the stack memory.accesd to copy data.Is known as call by value.orginal value not change. 
+// Heap Memory:- Non- primitive data type store in the Heap memory.accesed to original data.Is known as call by reference.original value canged.
+let myYoutubeName="Anand Raj Bind";
+
+let anotherName=myYoutubeName;
+anotherName="Anurag";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne={
+    email:"anandrajabind@gmail.com",
+    upi:"user@ybl"
+}
+let userTwo= userOne;
+
+userTwo.email="anurag@gmail.com";
+console.log(userOne);
+console.log(userTwo);
+
+
+
