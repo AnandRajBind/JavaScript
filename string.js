@@ -24,3 +24,14 @@ console.log(newString);
 
 const anOtherString=gameName.slice(-13,4);// allow negtive value.
 console.log(anOtherString);
+
+const newStringOne="   anand    raj   ";
+console.log(newStringOne)
+console.log(newStringOne.trim())//remove starting and ending space
+
+const url="https://anand.com/hitesh%20Bind"
+console.log(url.replace("%20", "__"));
+console.log(url.includes( "anand"));
+ 
+
+console.log(gameName.split(" "));// string ko array me convert ker rahe hai based on the space.
