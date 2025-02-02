@@ -6,7 +6,7 @@
 // object literals (singleton create nhi  hoga)
 
 
-const mySym=Symbol("key1");
+const mySym=Symbol("key1");// symbol
 
 const JsUser={
     name:"Anand",
