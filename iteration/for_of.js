@@ -1,4 +1,4 @@
-// *********************************************for of loop *******************************************************
+// *********************************************for of loop work on the array *******************************************************
 
 // ["","", "" ]
 // [{}, {},{}]
@@ -34,7 +34,7 @@ map.set("Fr", "France");
                                                       'Fr' => 'France'
                                                       }
                     */
-// ****************************************************************************************************
+// **************************************for of loop on the map**************************************
 
 for (const key of map) {
   // print map ka key value in the array formate
@@ -51,9 +51,22 @@ for (const [key, value] of map) {
   //destructure map ka key value
   console.log(key, ":-", value);
 }
-/*output In :- India
+/*output                         In :- India
                                  USA :- United State of America
                                  Fr :- France
 
                               */
 //************************************for of loop on the object  *********************************** */
+// for of loop object per nhi iteratable hota hai.
+
+/*
+const myobject={
+  'game1': 'NFS',
+  'game2':'spiderman'
+}
+
+for(let [key, value] of myobject){
+  console.log(key, '-:' , value);
+}
+
+*/
