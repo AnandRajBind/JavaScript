@@ -84,7 +84,6 @@ function newGame() {
     numGuess = 1;
     remaining.innerHTML = `${11 - numGuess}`;
     startOver.removeChild(p);
-
     playGame = true;
   });
 }
