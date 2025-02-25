@@ -31,17 +31,14 @@
     const changeText = function () {
         document.querySelector('h1').innerHTML = 'best js series'
     }
-    const changeMe= setTimeout(changeText, 2000);// after two second change the h1 text.
+    const changeMe= setTimeout(changeText, 5000);// after two second change the h1 text.
 
+    //  clearTimeout(changeMe);
 
-     clearTimeout(changeMe);
-
-
-
-
-
-
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("stopped");
+    })
 
 </script>
-
 </html>
