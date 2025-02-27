@@ -86,6 +86,7 @@ promiseFour
   */
 // *********************handle promise by using the Async await ****************************************************
 
+/*
 const promiseFive = new Promise(function (resolve, reject) {
   setTimeout(function () {
     let error = true;
@@ -96,13 +97,38 @@ const promiseFive = new Promise(function (resolve, reject) {
     }
   }, 1000);
 });
-//await directly not handle the error 
+//await directly not handle the error
 async function consumePromiseFive() {
   try {
-    const response=await promiseFive
+    const response = await promiseFive;
     console.log(response);
   } catch (e) {
-    console.log(e);// error handle gracefully 
+    console.log(e); // error handle gracefully
   }
 }
 consumePromiseFive();
+
+*/
+
+// ******************************fetch access the api *************************************
+
+/*
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    // console.log(response);
+    const data =await response.json();
+    console.log(  data);
+  } catch (error) {
+    console.log("E:", error);
+  }
+}
+getAllUsers();
+*/
+fetch("https://jsonplaceholder.typicode.com/users").then(function(response){
+    return response.json();
+}).then(function(data){
+    console.log(data);
+    
+}).catch((error)=>console.log(error));
+
